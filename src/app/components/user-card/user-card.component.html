@@ -3,8 +3,8 @@
    
   </div>
 
-  <h5>TrekHub</h5>
-  <p>Changing the world through the power of Code</p>
+  <h5>{{user.username}}</h5>
+  <p>{{user.bio}}</p>
 
 </div>
 
@@ -13,16 +13,16 @@
 <div class="user-info d-flex justify-content-around " >
     <div>
         <h5>Followers</h5>
-        <p>13</p>
+        <p>{{user.followers}}</p>
     </div>
     <div>
         <h5>Following</h5>
-        <p>13</p>
+        <p>{{user.following}}</p>
     </div><div>
         <h5>Repositories</h5>
-        <p>13</p>
+        <p>{{user.publicRepos}}</p>
     </div><div>
         <h5>Stars</h5>
-        <p>13</p>
+        <p>{{user.totalStars}}</p>
     </div>
 </div>
