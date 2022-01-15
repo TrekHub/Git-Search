@@ -5,14 +5,16 @@ import { AppComponent } from './app.component';
 import { UserComponent } from './user/user.component';
 import { HeaderComponent } from './components/header/header.component';
 import { UserCardComponent } from './components/user-card/user-card.component';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { UserFormComponent } from './components/user-form/user-form.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     UserComponent,
     HeaderComponent,
-    UserCardComponent
+    UserCardComponent,
+    UserFormComponent
   ],
   imports: [
     BrowserModule,
