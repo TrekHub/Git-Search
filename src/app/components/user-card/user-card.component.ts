@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { User } from 'src/app/classes/user';
+
 
 
 
@@ -10,7 +10,7 @@ import { User } from 'src/app/classes/user';
 })
 export class UserCardComponent implements OnInit {
   @Input()
-  user!: User;
+  userData: any
 
   constructor() { }
 
