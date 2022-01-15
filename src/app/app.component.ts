@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Git-Search';
+
+
+  userData: any
+
+  updateUserData(userData: any){
+    this.userData = userData
+
+  }
 }

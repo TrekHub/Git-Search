@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { User } from '../classes/user';
 import { UserService } from '../user-service/user.service';
 
@@ -9,35 +9,22 @@ import { UserService } from '../user-service/user.service';
   styleUrls: ['./user.component.css']
 })
 export class UserComponent implements OnInit {
+  @Input() userData: any
 
-
-
-  user!: User;
-  userData: any;
-
-  constructor(private userService: UserService, private http: HttpClient) {
+ngOnInit(): void {
     
-   }
+}
 
-  ngOnInit(): void {
+  
+  
+   
+}
 
 
-
-    this.userService.getUser().subscribe(res => {
-      this.userData = res
-    })
   
 
-    // this.http.get<apiUserResponse>("https://api.github.com/users/bryanbill").subscribe(res => {
-
-    // //Upon succesfull api response
-    
-
-    // })
 
 
 
 
-  }
 
-}

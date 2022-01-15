@@ -1,5 +1,9 @@
-<app-header></app-header>
+<app-header  (userFetched)="updateUserData($event)"></app-header>
 <div>
+  <app-user [userData]= "userData" ></app-user>
+</div>
 
-  <app-user></app-user>
+
+<div>
+  <h3>Repositories</h3>
 </div>
