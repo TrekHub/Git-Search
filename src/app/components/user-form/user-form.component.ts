@@ -15,12 +15,12 @@ export class UserFormComponent implements OnInit {
   @Output()
   gitUser!: string;
 
-  @Output() userFetched: EventEmitter<string> = new EventEmitter();
+  @Output() userFetched: EventEmitter<User> = new EventEmitter();
   @Output() reposFetched: EventEmitter<any> = new EventEmitter();
 
 
-  user!: User;
-  userData: any;
+ 
+  userData!: User;
   repos!: any;
 
 
@@ -31,7 +31,7 @@ export class UserFormComponent implements OnInit {
 
   searchGitUsers() {
     this.userService.getUser(this.gitUser).subscribe(res => {
-      this.userData = res
+      this.userData =  new User(res.login, res.avatar_url, res.created_at, res.html_url, res.followers, res.following, res.public_repos, res.public_gist)
       this.userFetched.emit(this.userData)
       // console.log(this.userData);
 

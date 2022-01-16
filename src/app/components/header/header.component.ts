@@ -23,7 +23,7 @@ export class HeaderComponent implements OnInit {
 
   emitEventRepos(repos: any){
     this.reposFetched.emit(repos)
-    console.log(repos)
+    
     
   }
 

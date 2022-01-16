@@ -1,19 +1,7 @@
 export class User {
 
-    constructor(public name: string,public  bio: string, public followers_url: string){
+    constructor(public login: string,public  avatar_url: string, public created_at: Date, public html_url: string, public followers: number, public following: number, public public_repos: number, public public_gist: number){
 
     }
 
 }
-
-
-
-        // avatar:string, followers: number, following: number, totalStars: number, publicRepos: number
-        
-        // this.username = username
-        // this.bio = bio
-        // this.avatar = avatar
-        // this.followers = followers
-        // this.following = following
-        // this.totalStars = totalStars
-        // this.publicRepos = publicRepos

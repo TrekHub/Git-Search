@@ -4,7 +4,7 @@
       <img src="{{userData.avatar_url}}" alt="">
     </div>
     <div id="greetings">
-      <h5> Hello <span id="username">{{userData.name}}</span> </h5>
+      <h5> Hello <span id="username">{{userData.login}}</span> </h5>
       <h5 class="mb-3">Joined on {{ userData.created_at | date}}</h5>
       <a href={{userData.html_url}}  target="_blank"><button id="btn-profile">View Profile</button></a>
     </div>
