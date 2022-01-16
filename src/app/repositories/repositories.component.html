@@ -1,11 +1,22 @@
-<div class=" container row mx-auto justify-content-around">
-  <div class="col-md-4" id="repo-list" *ngFor="let repo of repos">
-      <h5>
+<div id="repos" class="row justify-content-around">
+  <div  class="col-md-4" id="repo-card" *ngFor="let repo of repos">
+    <div>
+      <h5 id="title">
         {{repo.name}}
       </h5>
-      <p>
+      <p id="date">Created on 12/12/2021</p>
+    </div>
+     <div>
+      <p id="description">
         {{repo.description}}
       </p>
+     </div>
+
+     <div>
       <p>{{repo.stargazers_count}} Stars</p>
+      <button>View</button>
+
+     </div>
+      
   </div>
 </div>

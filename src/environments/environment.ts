@@ -5,9 +5,9 @@
 export const environment = {
   production: false,
 
-  token:  "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",
+  token:  "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",
 
-  clientSecret:  "0c89665b93d5fefa14caa72d49a0ae874bd8e9fa",
+  clientSecret:  "22258f853f6ad13ef5f238f32deb9e6b0cb56890",
 
   clientid:  "467a2bbab7ef3c73d69d",
 
