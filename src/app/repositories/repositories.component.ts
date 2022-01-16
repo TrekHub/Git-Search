@@ -16,7 +16,7 @@ export class RepositoriesComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.http.get<any>("https://api.github.com/users/trekhub/repos").subscribe(data=>{
+    this.http.get<any>("https://api.github.com/users/trekhub/repos?per_page=9").subscribe(data=>{
       this.repos = data
       
     })
