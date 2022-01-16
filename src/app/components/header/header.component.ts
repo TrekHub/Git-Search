@@ -10,13 +10,14 @@ export class HeaderComponent implements OnInit {
  userData: any
 
 
+
   @Output() userFetched: EventEmitter<string> = new EventEmitter();
   @Output() reposFetched: EventEmitter<any> = new EventEmitter();
 
 
   emitEventUser(userData: any) {
     this.userFetched.emit(userData)
-    console.log(userData);   
+       
 
   }
 
