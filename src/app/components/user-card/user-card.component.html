@@ -1,33 +1,3 @@
-<!-- <div id="user-card" class="d-flex flex-column justify-content-center align-items-center text-center">
-  <div id="user-avatar">
-      <img src="{{userData.avatar_url}}" alt="" srcset="">
-  </div>
-  <h5>{{userData.name}}</h5>
-  <p>{{userData.bio}}</p>
-</div>
-
-
-
-
-
-
-<div class="user-info d-flex justify-content-around " >
-    <div>
-        <h5>Followers</h5>
-        <p>{{userData.followers}}</p>
-    </div>
-    <div>
-        <h5>Following</h5>
-        <p>{{userData.following}}</p>
-    </div><div>
-        <h5>Repositories</h5>
-        <p>{{userData.public_repos}}</p>
-    </div><div>
-        <h5>Gists</h5>
-        <p>{{userData.public_gists}}</p>
-    </div>
-</div> -->
-
 
 <div class="name my-4 d-flex align-items-center">
     <div id="avatar">
@@ -35,7 +5,8 @@
     </div>
     <div id="greetings">
       <h5> Hello <span id="username">{{userData.name}}</span> </h5>
-      <h5>Joined 12/12/2020</h5>
+      <h5 class="mb-3">Joined on {{ userData.created_at | date}}</h5>
+      <a href={{userData.html_url}}  target="_blank"><button id="btn-profile">View Profile</button></a>
     </div>
   
   </div>
