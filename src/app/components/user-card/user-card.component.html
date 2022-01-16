@@ -1,4 +1,4 @@
-<div id="user-card" class="d-flex flex-column justify-content-center align-items-center text-center">
+<!-- <div id="user-card" class="d-flex flex-column justify-content-center align-items-center text-center">
   <div id="user-avatar">
       <img src="{{userData.avatar_url}}" alt="" srcset="">
   </div>
@@ -26,4 +26,41 @@
         <h5>Gists</h5>
         <p>{{userData.public_gists}}</p>
     </div>
-</div>
+</div> -->
+
+
+<div class="name my-4 d-flex align-items-center">
+    <div id="avatar">
+      <img src="{{userData.avatar_url}}" alt="">
+    </div>
+    <div id="greetings">
+      <h5> Hello <span id="username">{{userData.name}}</span> </h5>
+      <h5>Joined 12/12/2020</h5>
+    </div>
+  
+  </div>
+  
+  <div class="banner d-flex justify-content-center align-items-center">
+  
+    <div id="profile_data" class=" d-flex justify-content-around ">
+      <div class="followers">
+        <h5 id="title">Followers</h5>
+        <h5 id="value">{{userData.followers}}</h5>
+      </div>
+      <div class="following">
+        <h5 id="title">Following</h5>
+        <h5 id="value">{{userData.following}}</h5>
+      </div>
+      <div class="Repositories">
+        <h5 id="title">Repositories</h5>
+        <h5 id="value">{{userData.public_repos}}</h5>
+      </div>
+      <div class="stars">
+        <h5 id="title">Gists</h5>
+        <h5 id="value">{{userData.public_gists}}</h5>
+      </div>
+  
+    </div>
+  
+  
+  </div>

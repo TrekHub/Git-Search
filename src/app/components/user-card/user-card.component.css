@@ -1,18 +1,63 @@
-#user-card {
-  max-width: 500px;
-  max-height: 500px;
-  background-color: greenyellow;
+.name {
+  width: 90%;
   margin: auto;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  padding-left: 16px;
 }
-#user-avatar img {
+
+
+#avatar img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
   background-color: gray;
-  
+  margin-right: 10px ;
 }
-.user-info {
-    width: 60%;
-    margin: auto;
+#greetings h5 {
+  margin-bottom: 4px;
+  font-weight: 600;
+
+}
+#username{
+  color: #34387b;
+  font-weight: 800;
+  font-family: 'Montserrat Alternates', sans-serif;
+
+}
+.banner {
+  height: 250px;
+  width: 90%;
+  margin:10px auto;
+  border-radius: 24px;
+  margin-top: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(206,228,245,255);
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+
+
+}
+#profile_data {
+  width: 90%;
+  margin: auto;
+}
+
+#title {
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #34387b;
+
+
+}
+#value {
+  font-family: 'Nunito', sans-serif;
+  font-size: 40px;
+  margin-top: 10px;
+  color: #34387b;
+
+  font-weight: 800;
 
 }

@@ -11,26 +11,14 @@
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li> -->
       </ul>
+      <app-user-form (userFetched)="emitEventUser($event)" (reposFetched)="emitEventRepos($event)"></app-user-form>
 
-      <div class="btn">
-        <button>Search</button>
-      </div>
     </div>
   </div>
 </nav>
 
-<div class="name my-4 d-flex align-items-center">
-  <div id="avatar">
-    <img src=""  alt="">
-  </div>
-  <div id="greetings">
-   <p class="m-o"> Hello <span id="username">TrekHub</span></p>
-   <p>Joined 12/12/2020</p>
-  </div>
 
-</div>
+<!-- <div class="space">
 
-<div class="banner">
-</div>
+</div> -->
 
-<app-user-form (userFetched)="emitEventUser($event)" (reposFetched)="emitEventRepos($event)"></app-user-form>
