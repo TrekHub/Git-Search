@@ -1,4 +1,4 @@
-<app-header  (userFetched)="updateUserData($event)"></app-header>
+<app-header  (userFetched)="updateUserData($event)"   (reposFetched)="updateRepos($event)"></app-header>
 <div>
   <app-user [userData]= "userData" ></app-user>
 </div>
@@ -6,4 +6,6 @@
 
 <div>
   <h3>Repositories</h3>
+  <app-repositories  [repos]="repos" ></app-repositories>
+  
 </div>

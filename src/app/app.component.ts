@@ -1,4 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+
 
 @Component({
   selector: 'app-root',
@@ -10,9 +12,24 @@ export class AppComponent {
 
 
   userData: any
+  repos: any
+
+ 
+  
+  
 
   updateUserData(userData: any){
     this.userData = userData
+    // console.log(this.userData);
+
 
   }
+
+
+  updateRepos(repos: any){
+    this.repos = repos
+
+  }
+
+
 }

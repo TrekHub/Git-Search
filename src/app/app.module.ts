@@ -8,8 +8,8 @@ import { UserCardComponent } from './components/user-card/user-card.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UserFormComponent } from './components/user-form/user-form.component'
 import { FormsModule } from '@angular/forms';
-import { RepoListComponent } from './repo-list/repo-list.component';
-import { RepoComponent } from './repo/repo.component';
+import { RepositoriesComponent } from './repositories/repositories.component';
+
 
 @NgModule({
   declarations: [
@@ -18,8 +18,8 @@ import { RepoComponent } from './repo/repo.component';
     HeaderComponent,
     UserCardComponent,
     UserFormComponent,
-    RepoListComponent,
-    RepoComponent,
+    RepositoriesComponent,
+    
     
 
   ],

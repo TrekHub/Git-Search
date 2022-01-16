@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="col-md-4" id="repo-list" *ngFor="let repo of repos">
+    <div >
+      <h5>
+        {{repo.name}}
+      </h5>
+      <p>
+        {{repo.description}}
+      </p>
+      <p>{{repo.stargazers_count}} Stars</p>
+    </div>
+  </div>
+</div>

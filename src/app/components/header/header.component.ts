@@ -9,10 +9,19 @@ export class HeaderComponent implements OnInit {
 
 
   @Output() userFetched: EventEmitter<string> = new EventEmitter();
+  @Output() reposFetched: EventEmitter<any> = new EventEmitter();
+
 
   emitEventUser(userData: any) {
     this.userFetched.emit(userData)
+    console.log(userData);   
 
+  }
+
+  emitEventRepos(repos: any){
+    this.reposFetched.emit(repos)
+    console.log(repos)
+    
   }
 
 
