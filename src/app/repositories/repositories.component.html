@@ -1,5 +1,5 @@
 <div id="repos" class="row justify-content-around">
-  <div  class="col-md-4" id="repo-card" *ngFor="let repo of repos">
+  <div  class="col-md-4 d-flex flex-column justify-content-around" id="repo-card" *ngFor="let repo of repos">
     <div>
       <h5 id="title">
         {{repo.name}}
@@ -12,9 +12,9 @@
       </p>
      </div>
 
-     <div>
-      <p>{{repo.stargazers_count}} Stars</p>
-      <button>View</button>
+     <div class="d-flex justify-content-between">
+      <p id="stars">{{repo.stargazers_count}} Stars</p>
+      <button id="btn-view">View</button>
 
      </div>
       
