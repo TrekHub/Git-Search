@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable} from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { User } from '../classes/user';
+import { Repo } from '../classes/repo';
 
 
 @Injectable({
@@ -25,7 +26,7 @@ export class UserService {
 
     getUserRepos(gitUser: string):Observable<any>{
       let reposUrl = `https://api.github.com/users/${gitUser}/repos?per_page=9?client_id=${environment.clientid}?client_secret=${environment.clientSecret}`
-      return this.http.get<any>(reposUrl)
+      return this.http.get<Repo>(reposUrl)
     }
 
   }

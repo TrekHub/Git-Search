@@ -9,6 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { UserFormComponent } from './components/user-form/user-form.component'
 import { FormsModule } from '@angular/forms';
 import { RepositoriesComponent } from './repositories/repositories.component';
+import { InvalidInputAlertDirective } from './directives/invalid-input-alert.directive';
 
 
 @NgModule({
@@ -19,6 +20,8 @@ import { RepositoriesComponent } from './repositories/repositories.component';
     UserCardComponent,
     UserFormComponent,
     RepositoriesComponent,
+    InvalidInputAlertDirective,
+
     
     
 
@@ -27,7 +30,9 @@ import { RepositoriesComponent } from './repositories/repositories.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    
+    
 
   ],
   providers: [],

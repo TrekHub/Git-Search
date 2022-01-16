@@ -11,12 +11,15 @@
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li> -->
       </ul>
-      <app-user-form (userFetched)="emitEventUser($event)" (reposFetched)="emitEventRepos($event)"></app-user-form>
+      <app-user-form  (errorEvent)="emitEventErr($event)" (userFetched)="emitEventUser($event)" (reposFetched)="emitEventRepos($event)"></app-user-form>
 
     </div>
   </div>
 </nav>
-
+<div appInvalidInputAlert *ngIf="errStat"   class="alert alert-danger alert-dismissible  show fade w-50 mx-auto" role="alert">
+   Please Enter The  Correct Info
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
 
 <!-- <div class="space">
 

@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { User } from 'src/app/classes/user';
 
 @Component({
   selector: 'app-header',
@@ -8,16 +9,22 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
  userData: any
+ errStat!: boolean
 
 
 
-  @Output() userFetched: EventEmitter<string> = new EventEmitter();
+
+
+
+  @Output() userFetched: EventEmitter<User> = new EventEmitter();
   @Output() reposFetched: EventEmitter<any> = new EventEmitter();
+  
+  
 
 
-  emitEventUser(userData: any) {
+  emitEventUser(userData: User) {
     this.userFetched.emit(userData)
-       
+    
 
   }
 
@@ -27,10 +34,19 @@ export class HeaderComponent implements OnInit {
     
   }
 
+  emitEventErr(errStat: boolean){
+    this.errStat = errStat
+  }
+
+
+
 
   constructor() { }
 
   ngOnInit(): void {
+    console.log();
+    
+
   }
 
 }
