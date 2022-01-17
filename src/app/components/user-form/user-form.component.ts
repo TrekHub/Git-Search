@@ -56,6 +56,7 @@ export class UserFormComponent implements OnInit {
         this.userData = new User(res.login, res.avatar_url, res.created_at, res.html_url, res.followers, res.following, res.public_repos, res.public_gists)
         this.userFetched.emit(this.userData)
         resolve()
+      
       },
       
        error => {
@@ -71,7 +72,7 @@ export class UserFormComponent implements OnInit {
         this.reposFetched.emit(this.repos)
         resolve()
       })
-
+this.gitUser= ""
 
 
     })

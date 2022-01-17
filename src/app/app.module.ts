@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { RepositoriesComponent } from './repositories/repositories.component';
 import { InvalidInputAlertDirective } from './directives/invalid-input-alert.directive';
 import { AboutComponent } from './components/about/about.component';
+import { ElapsedTimePipe } from './pipes/elapsed-time.pipe';
 
 
 
@@ -24,6 +25,7 @@ import { AboutComponent } from './components/about/about.component';
     RepositoriesComponent,
     InvalidInputAlertDirective,
     AboutComponent,
+    ElapsedTimePipe,
   
 
     

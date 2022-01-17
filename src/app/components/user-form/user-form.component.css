@@ -1,5 +1,5 @@
 #search-btn {
-    width: 110px;
+    width: 200px;
     height: 45px;
     border-radius: 10px;
     outline: none;
@@ -10,3 +10,8 @@
     font-weight: 600;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+#search-btn:hover{
+    background-color: rgba(206,228,245,255);
+    color: #34387b;
+    font-weight: 800;
+  }

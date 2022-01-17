@@ -18,7 +18,7 @@ export class RepositoriesComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.http.get<Repo>(`https://api.github.com/users/trekhub/repos?client_id=${environment.clientid}?client_secret=${environment.clientSecret}&sort=stars&order=desc&page=1&per_page=6`).subscribe(data=>{
+    this.http.get<Repo>(`https://api.github.com/users/trekhub/repos?client_id=${environment.clientid}?client_secret=${environment.clientSecret}&sort=stars&order=&page=1&per_page=6`).subscribe(data=>{
       this.repos = data
       
     })

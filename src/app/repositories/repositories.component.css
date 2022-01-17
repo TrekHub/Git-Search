@@ -42,3 +42,19 @@
   font-weight: 600;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+#btn-view:hover{
+  background-color: rgba(206,228,245,255);
+  color: #34387b;
+  font-weight: 800;
+}
+
+.shrink {
+  transition: 1s ease;
+  }
+  
+  .shrink:hover{
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  transition: 1s ease;
+  }
