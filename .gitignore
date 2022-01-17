@@ -5,7 +5,9 @@
 /tmp
 /out-tsc
 
-/src/environments/environment.ts
+environment.ts
+/environments
+/app/environments
 # Only exists if Bazel was run
 /bazel-out
 

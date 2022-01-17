@@ -25,7 +25,7 @@ export class UserService {
     }
 
     getUserRepos(gitUser: string):Observable<any>{
-      let reposUrl = `https://api.github.com/users/${gitUser}/repos?per_page=9?client_id=${environment.clientid}?client_secret=${environment.clientSecret}`
+      let reposUrl = `https://api.github.com/users/${gitUser}/repos?client_id=${environment.clientid}?client_secret=${environment.clientSecret}&sort=stars&order=desc&page=1&per_page=9`
       return this.http.get<Repo>(reposUrl)
     }
 

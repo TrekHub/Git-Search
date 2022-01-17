@@ -10,6 +10,8 @@ import { UserFormComponent } from './components/user-form/user-form.component'
 import { FormsModule } from '@angular/forms';
 import { RepositoriesComponent } from './repositories/repositories.component';
 import { InvalidInputAlertDirective } from './directives/invalid-input-alert.directive';
+import { AboutComponent } from './components/about/about.component';
+
 
 
 @NgModule({
@@ -21,6 +23,8 @@ import { InvalidInputAlertDirective } from './directives/invalid-input-alert.dir
     UserFormComponent,
     RepositoriesComponent,
     InvalidInputAlertDirective,
+    AboutComponent,
+  
 
     
     
